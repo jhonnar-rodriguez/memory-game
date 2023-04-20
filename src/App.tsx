@@ -1,8 +1,20 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
+import { Play } from './pages/Play';
+
+import './App.css';
+
 function App() {
   return (
-    <p className="read-the-docs">
-      Welcome to the Memory Game
-    </p>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path="/" />
+        <Route element={<Play />} path="/play" />
+        <Route element={<NotFound />} path="*" />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
