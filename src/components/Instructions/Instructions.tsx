@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
 type InstructionsProps = {
-  onHideModal: () => void,
+  onHideModal: () => void;
   show: boolean;
 };
 
@@ -24,6 +24,7 @@ export function Instructions({ onHideModal, show }: InstructionsProps): ReactEle
             Hits and Errors will be shown.
           </p>
           <ul>
+            <li>To start the game players must provide a name.</li>
             <li>Turn over two cards.</li>
             <li>
               If the cards match, they stay face up and 1 point will be added
