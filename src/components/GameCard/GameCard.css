@@ -1,0 +1,30 @@
+.card-container {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.card-container img {
+	height: 150px;
+	object-fit: fill;
+}
+
+.fade-in-image {
+	animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

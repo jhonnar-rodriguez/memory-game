@@ -20,7 +20,7 @@ export function Home(): ReactElement {
   }
 
   return (
-    <Container className="d-flex flex-column justify-content-center align-items-center">
+    <Container className="app-container d-flex flex-column justify-content-center align-items-center">
       <Row>
         <Col className="text-center">
           <h1>Welcome to the Memory Game</h1>
@@ -53,7 +53,6 @@ export function Home(): ReactElement {
           />
         )
       }
-
     </Container>
   );
 }

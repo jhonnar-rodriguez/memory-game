@@ -11,7 +11,7 @@ import './App.css';
 
 function App(): ReactElement {
   return (
-    <Container className="app-container" fluid>
+    <Container fluid>
       <BrowserRouter>
         <Routes>
           <Route element={<Home />} path="/" />
