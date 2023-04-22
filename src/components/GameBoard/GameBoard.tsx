@@ -69,7 +69,7 @@ export function GameBoard({ cards }: GameBoardProps): ReactElement {
     validateRevealedCards();
   }, [validateRevealedCards]);
 
-  const onRestartGame = useCallback((): void => {
+  const handleRestartGame = useCallback((): void => {
     setRevealedCards([]);
     setSolvedCards([]);
     setHits(0);
@@ -101,7 +101,7 @@ export function GameBoard({ cards }: GameBoardProps): ReactElement {
       }
 
       {
-        isGameCompleted && <GameCompleted onRestartGame={() => onRestartGame()} />
+        isGameCompleted && <GameCompleted onRestartGame={() => handleRestartGame()} />
       }
     </>
   );
