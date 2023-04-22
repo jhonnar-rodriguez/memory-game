@@ -3,7 +3,9 @@
 }
 
 body {
+  background-attachment: fixed;
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-repeat: no-repeat;
   background-size: cover;
   font-family: var(--font-family);
   height: 100vh;
@@ -21,6 +23,6 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
 }

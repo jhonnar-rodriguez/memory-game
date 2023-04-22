@@ -10,7 +10,7 @@ export function NotFound() {
   const navigate = useNavigate();
 
   return (
-    <Container className="d-flex flex-column justify-content-center align-items-center mt-5">
+    <Container className="app-container d-flex flex-column justify-content-center align-items-center mt-5">
       <Row>
         <Col className="text-center">
           <h1>Page Not Found</h1>
@@ -29,4 +29,3 @@ export function NotFound() {
     </Container>
   );
 }
-export default NotFound;
