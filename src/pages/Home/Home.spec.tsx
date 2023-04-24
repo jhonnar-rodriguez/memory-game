@@ -15,7 +15,7 @@ vi.mock('react-router-dom', async () => ({
   Navigate: vi.fn().mockImplementation(() => <div>Mocked Navigation</div>),
 }));
 
-describe('Home', () => {
+describe('Home Page', () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
