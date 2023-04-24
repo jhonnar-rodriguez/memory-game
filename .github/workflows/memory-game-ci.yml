@@ -1,10 +1,8 @@
 name: Deployment Pipeline
 
 on:
-  push:
-    branches: [main]
   pull_request:
-    branches: [main, stage, qa]
+    branches: [stage, qa]
     types: [opened, synchronize]
 
 jobs:
@@ -112,16 +110,8 @@ jobs:
       - name: Running tests
         run: npm run test
 
-  deploy:
-    needs: ['test']
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "🙌 Deploy step must be implemented on your own."
-
-      - run: echo "🗽 This job's status is ${{ job.status }}."
-
   clean-artifacts:
-    needs: ['deploy']
+    needs: ['test']
     runs-on: ubuntu-latest
     steps:
       - name: Cleaning Artifacts by Workflow Run
