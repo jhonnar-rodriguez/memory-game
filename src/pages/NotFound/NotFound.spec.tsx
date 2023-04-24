@@ -11,7 +11,7 @@ vi.mock('react-router-dom', async () => ({
   useNavigate: () => mockedNavigation,
 }));
 
-describe('NotFound', () => {
+describe('NotFound Page', () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
