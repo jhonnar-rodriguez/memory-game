@@ -9,15 +9,11 @@ import { MemoryRouter, Navigate } from 'react-router-dom';
 
 import { Home } from './Home';
 
-vi.mock('react-router-dom', async () => {
+vi.mock('react-router-dom', async () => ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const routerDom = await vi.importActual('react-router-dom') as any;
-
-  return {
-    ...routerDom,
-    Navigate: vi.fn().mockImplementation(() => <div>Mocked Navigation</div>),
-  };
-});
+  ...(await vi.importActual('react-router-dom') as any),
+  Navigate: vi.fn().mockImplementation(() => <div>Mocked Navigation</div>),
+}));
 
 describe('Home', () => {
   beforeEach(() => {
