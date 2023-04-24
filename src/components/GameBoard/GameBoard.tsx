@@ -25,8 +25,8 @@ export function GameBoard({ cards }: GameBoardProps): ReactElement {
   const [mistakes, setMistakes] = useState<number>(0);
 
   const isGameCompleted = useMemo<boolean>(
-    () => solvedCards.length === cards.length,
-    [cards, solvedCards],
+    () => solvedCards.length === boardCards.length,
+    [boardCards, solvedCards],
   );
 
   useEffect(() => {
