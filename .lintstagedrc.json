@@ -1,0 +1,5 @@
+{
+  "*.{ts,tsx,jsx}": [
+      "npm run lint"
+  ]
+}

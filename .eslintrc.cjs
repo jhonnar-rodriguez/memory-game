@@ -14,5 +14,18 @@ module.exports = {
   rules: {
     'react-refresh/only-export-components': 'warn',
     'react/react-in-jsx-scope': 0,
+    'import/no-default-export': 'off',
+    'import/prefer-default-export': 'off',
+    'no-nested-ternary': 'error',
+    'prefer-const': 'error',
+    'react/jsx-sort-props': [
+      'error',
+      {
+        ignoreCase: true,
+      },
+    ],
+    'react-hooks/exhaustive-deps': 'error',
+    'react/no-array-index-key': 0,
+    'react/require-default-props': 0,
   },
 };
